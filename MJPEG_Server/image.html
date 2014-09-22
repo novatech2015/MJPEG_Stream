@@ -1,0 +1,15 @@
+<html>
+	<head>
+		<script language="JavaScript">
+		function refresh(){
+		
+			setTimeout(function(){document.getElementById("image").src = "capture.jpg?" + new Date().getTime();
+		refresh();}, 50);
+		
+}
+		</script>
+	</head>
+	<body onload="refresh()">
+		<img src="capture.jpg" id="image" >
+	</body>
+</html>
